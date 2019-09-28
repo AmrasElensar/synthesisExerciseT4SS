@@ -5,6 +5,7 @@
     <title>Programming Xtreme Leet</title>
     <link href="styles/main.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/filter.js"></script>
 </head>
 <body>
 
@@ -15,32 +16,32 @@
     </header>
 
     <div class="content">
-        <div class="content-block c-plus-plus dotted-border">
+        <div id="cplusplus" class="content-block c-plus-plus dotted-border">
             <a href="detail.html">
                 <div class="link-bar">C++</div>
             </a>
         </div>
-        <div class="content-block html dotted-border">
+        <div id="html" class="content-block html dotted-border">
             <a href="detail.html">
                 <div class="link-bar">HTML</div>
             </a>
         </div>
-        <div class="content-block java dotted-border">
+        <div id="java" class="content-block java dotted-border">
             <a href="detail.html">
                 <div class="link-bar">JAVA</div>
             </a>
         </div>
-        <div class="content-block php dotted-border">
+        <div id="php" class="content-block php dotted-border">
             <a href="detail.html">
                 <div class="link-bar">PHP</div>
             </a>
         </div>
-        <div class="content-block python dotted-border">
+        <div id="python" class="content-block python dotted-border">
             <a href="detail.html">
                 <div class="link-bar">PYTHON</div>
             </a>
         </div>
-        <div class="content-block csharp dotted-border">
+        <div id="csharp" class="content-block csharp dotted-border">
             <a href="detail.html">
                 <div class="link-bar">C#</div>
             </a>
@@ -56,10 +57,11 @@
 
 <nav class="navbar" id="main-menu">
     <ul class="navbar-list">
-        <a href=""><li class="nav-item">frontend</li></a>
-        <a href=""><li class="nav-item">backend</li></a>
-        <a href=""><li class="nav-item">markup</li></a>
-        <a href=""><li class="nav-item">system</li></a>
+        <a onclick="toggleVisibility('frontend')"><li class="nav-item">frontend</li></a>
+        <a onclick="toggleVisibility('backend')"><li class="nav-item">backend</li></a>
+        <a onclick="toggleVisibility('markup')"><li class="nav-item">markup</li></a>
+        <a onclick="toggleVisibility('system')"><li class="nav-item">system</li></a>
+        <a onclick="toggleVisibility('reset')"><li class="nav-item">reset</li></a>
         <a href="statistics.html"><li class="nav-item">statistics</li></a>
         <a class="sm-screen" href="#"><li class="nav-item">close</li></a>
     </ul>
