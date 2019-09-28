@@ -1,0 +1,177 @@
+body {
+  background-image: url("../images/background.jpg");
+  margin: 0;
+}
+
+.page-header {
+  background-color: #333;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  .title {
+    font-family: "Arial Black", sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0 10px 0;
+  }
+
+  .logo {
+    width: 150px;
+  }
+}
+
+.green-letter {
+  color: #4CAF50;
+}
+
+.content {
+  margin: 20px;
+  display: grid;
+  grid-template-rows: 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  // @formatter:off
+  grid-template-areas:
+  "cplusplus  html        java"
+  "php          python      csharp";
+  // @formatter:on
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  .dotted-border {
+    border: white dotted 5px;
+    margin: 20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .link-bar {
+    background-color: #4CAF50;
+    width: 100%;
+    font-family: Consolas, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  }
+
+  .c-plus-plus {
+    grid-area: cplusplus;
+    background-image: url("../images/cplusplus.jpg");
+    background-size: cover;
+  }
+
+  .html {
+    grid-area: html;
+    background-image: url("../images/html.png");
+    background-size: cover;
+  }
+
+  .java {
+    grid-area: java;
+    background-image: url("../images/java.jpg");
+    background-size: cover;
+  }
+
+  .php {
+    grid-area: php;
+    background-image: url("../images/php.png");
+    background-size: cover;
+  }
+
+  .python {
+    grid-area: python;
+    background-image: url("../images/python.png");
+    background-size: cover;
+  }
+
+  .csharp {
+    grid-area: csharp;
+    background-image: url("../images/Csharp.png");
+    background-size: cover;
+  }
+}
+
+.navbar {
+  font-family: Consolas, sans-serif;
+  background-color: #333333;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  .navbar-list {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+
+    .nav-item {
+      display: block;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 2em;
+
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+      }
+    }
+
+    .nav-item:hover {
+      background-color: #4CAF50;
+    }
+  }
+}
+
+.detail-content {
+  font-family: "Arial", sans-serif;
+  width: 75%;
+  margin: 20px auto 20px auto;
+
+  .sub-title {
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Arial Black", sans-serif;
+    text-align: right;
+    margin-right: 25px;
+  }
+
+  .initial {
+    font-size: 100px;
+    font-weight: bold;
+  }
+
+  .white-paragraph {
+    color: white;
+  }
+
+  .green-paragraph {
+    color: #4CAF50;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: white;
+  }
+}
+
+.home-button {
+  width: 100px;
+  height: 35px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #4CAF50;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 10px;
+  float: left;
+}
+
