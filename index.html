@@ -4,55 +4,64 @@
     <meta charset="UTF-8">
     <title>Programming Xtreme Leet</title>
     <link href="styles/main.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<header class="page-header">
-    <h1 class="title"><span class="green-letter">P</span>rogramming <span class="green-letter">E</span>xtreme <span
-            class="green-letter">L</span>eet</h1>
-    <img class="logo" src="images/pxl-logo.png" alt="">
-</header>
+    <header class="page-header">
+        <h1 class="title"><span class="green-letter">P</span>rogramming <span class="green-letter">E</span>xtreme <span
+                class="green-letter">L</span>eet</h1>
+        <img class="logo" src="images/pxl-logo.png" alt="">
+    </header>
 
-<div class="content">
-    <div class="c-plus-plus dotted-border">
-        <a href="detail.html">
-            <div class="link-bar">C++</div>
-        </a>
+    <div class="content">
+        <div class="content-block c-plus-plus dotted-border">
+            <a href="detail.html">
+                <div class="link-bar">C++</div>
+            </a>
+        </div>
+        <div class="content-block html dotted-border">
+            <a href="detail.html">
+                <div class="link-bar">HTML</div>
+            </a>
+        </div>
+        <div class="content-block java dotted-border">
+            <a href="detail.html">
+                <div class="link-bar">JAVA</div>
+            </a>
+        </div>
+        <div class="content-block php dotted-border">
+            <a href="detail.html">
+                <div class="link-bar">PHP</div>
+            </a>
+        </div>
+        <div class="content-block python dotted-border">
+            <a href="detail.html">
+                <div class="link-bar">PYTHON</div>
+            </a>
+        </div>
+        <div class="content-block csharp dotted-border">
+            <a href="detail.html">
+                <div class="link-bar">C#</div>
+            </a>
+        </div>
     </div>
-    <div class="html dotted-border">
-        <a href="detail.html">
-            <div class="link-bar">HTML</div>
-        </a>
-    </div>
-    <div class="java dotted-border">
-        <a href="detail.html">
-            <div class="link-bar">JAVA</div>
-        </a>
-    </div>
-    <div class="php dotted-border">
-        <a href="detail.html">
-            <div class="link-bar">PHP</div>
-        </a>
-    </div>
-    <div class="python dotted-border">
-        <a href="detail.html">
-            <div class="link-bar">PYTHON</div>
-        </a>
-    </div>
-    <div class="csharp dotted-border">
-        <a href="detail.html">
-            <div class="link-bar">C#</div>
-        </a>
-    </div>
-</div>
 
-<nav class="navbar">
+    <div class="menu-toggle">
+        <a href="#main-menu" class="open-menu">
+            <span class="hamburger fa fa-bars" aria-hidden="true"></span>
+        </a>
+        <h1>MENU</h1>
+    </div>
+
+<nav class="navbar" id="main-menu">
     <ul class="navbar-list">
         <li class="nav-item"><a href="">frontend</a></li>
         <li class="nav-item"><a href="">backend</a></li>
         <li class="nav-item"><a href="">markup</a></li>
         <li class="nav-item"><a href="">system</a></li>
         <li class="nav-item"><a href="">reset</a></li>
+        <li class="nav-item sm-screen"><a href="#">close</a></li>
     </ul>
 </nav>
 </body>
