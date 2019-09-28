@@ -1,0 +1,25 @@
+@import "main.css";
+.statistics-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: Consolas, sans-serif;
+  color: white;
+}
+.statistics-content .statistics-table {
+  padding: 200px;
+  font-size: 50px;
+  border: white dotted 2px;
+}
+.statistics-content .table-title {
+  margin: 0;
+  font-size: 5em !important;
+}
+.statistics-content th {
+  color: #4CAF50;
+}
+.statistics-content tr, .statistics-content th {
+  text-align: center;
+}
+
+/*# sourceMappingURL=statistics.css.map */

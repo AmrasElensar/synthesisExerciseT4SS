@@ -1,0 +1,28 @@
+@import "main.css";
+
+.statistics-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: Consolas, sans-serif;
+  color: white;
+
+  .statistics-table {
+    padding: 200px;
+    font-size: 50px;
+    border: white dotted 2px;
+  }
+
+  .table-title {
+    margin: 0;
+    font-size: 5em !important;
+  }
+
+  th {
+    color: #4CAF50;
+  }
+
+  tr, th {
+    text-align: center;
+  }
+}
