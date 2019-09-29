@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link href="styles/store.css" type="text/css" rel="stylesheet">
+    <script src="js/shoppingcart.js"></script>
+</head>
+<body>
+<header class="page-header">
+    <h1 class="title"><span class="green-letter">S</span>tore</h1>
+    <img class="logo" src="images/pxl-logo.png" alt="">
+</header>
+
+<div class="sub-title-block">
+    <input class="green-button" onclick="window.location.href='index.html'" type="button" value="BACK"/>
+    <h2 class="sub-title"><span class="green-letter">S</span>hoppingcart</h2>
+</div>
+
+<div class="store-content">
+    <div class="store-content-block">
+        <div class="block-element">
+            <h2>Choose your products</h2>
+            <ul class="catalog list" id="product-list"></ul>
+        </div>
+        <div class="block-element">
+            <h2>Chosen products:</h2>
+            <ul class="cart list" id="selected-products"></ul>
+        </div>
+    </div>
+    <div class="store-content-block">
+        <input class="green-button wide-button" id="load-button" onclick="loadProducts()" value="Load Products">
+        <input class="empty-btn green-button wide-button" id="empty-btn" onclick="emptyCart()" value="Empty Cart">
+    </div>
+</div>
+
+</body>
+</html>
