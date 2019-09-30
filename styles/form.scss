@@ -1,0 +1,62 @@
+@import "main.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.simple-form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: Consolas, sans-serif;
+  align-items: center;
+  color: white;
+
+  label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+  }
+
+  .form-input {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
+
+.form-bg {
+  background-color: #333333;
+  border: solid 2px #4CAF50;
+  width: 500px;
+  border-radius: 20px;
+}
+
+.message-box {
+  padding: 20px;
+  margin-top: 20px;
+  font-family: Consolas, sans-serif;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: #4CAF50 solid 2px;
+  border-radius: 20px;
+  color: #4CAF50;
+  opacity: 0;
+  transition: opacity ease 1s;
+}
+
+.fade {
+  opacity: 1 !important;
+}
+
+.button-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.reset-btn {
+  margin-bottom: 20px;
+}

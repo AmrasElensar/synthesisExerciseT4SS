@@ -1,0 +1,50 @@
+@import "main.css";
+.wide-button {
+  width: 150px !important;
+  text-align: center;
+}
+
+.store-content {
+  color: white;
+  font-family: Consolas, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.store-content .store-content-block {
+  display: flex;
+  justify-items: center;
+}
+.store-content .store-content-block .block-element {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 20px;
+}
+.store-content .list {
+  width: 250px;
+  height: 100px;
+  padding: 20px;
+  background-color: #333333;
+  border-radius: 10px;
+  border: solid white 2px;
+  list-style: none;
+}
+.store-content .catalog li {
+  cursor: pointer;
+}
+.store-content .catalog li:hover {
+  color: #4CAF50;
+}
+.store-content .cart {
+  padding: 20px;
+  background-color: #333333;
+  text-decoration: none;
+  color: #4CAF50 !important;
+}
+
+.empty-btn {
+  display: none;
+}
+
+/*# sourceMappingURL=store.css.map */

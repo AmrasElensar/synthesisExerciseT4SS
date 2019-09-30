@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+</head>
+<body>
+<header class="page-header">
+    <h1 class="title"><span class="green-letter">S</span>imple Form</h1>
+    <img class="logo" src="images/pxl-logo.png" alt="">
+</header>
+
+<div class="sub-title-block">
+    <input class="green-button" onclick="window.location.href='index.html'" type="button" value="BACK"/>
+    <h2 class="sub-title"><span class="green-letter">F</span>orm</h2>
+</div>
+<button class="reset-btn green-button" onclick="clearLocalStorage()">Clear local storage</button>
+<div class="form-bg">
+    <form id="simple-form" class="simple-form" action="#" method="post">
+        <label for="firstname">First name:</label>
+        <input class="form-input" id="firstname" name="firstname" type="text" placeholder="firstName" value="Maarten" required>
+        <label for="lastname">Last name:</label>
+        <input class="form-input" id="lastname" name="lastname" type="text" placeholder="lastname" value="Knapen" required>
+        <label for="email">E-mail address:</label>
+        <input class="form-input" id="email" name="email" type="email" placeholder="email address" value="maarten.knapen@telenet.be" required>
+        <label for="remarks">Remarks:</label>
+        <textarea class="form-input" id="remarks" name="remarks" cols="30" rows="4" required>"This is a remark"</textarea>
+        <div class="button-group">
+            <input class="green-button" id="submit-btn" type="submit" value="Send">
+            <input class="green-button" id="load-btn" type="submit" value="Load">
+            <input class="green-button" id="clear-btn" type="submit" value="Clear">
+            <input class="green-button" id="refresh-btn" type="submit" value="Refresh">
+        </div>
+    </form>
+</div>
+<div class="message-box" id="message-box"></div>
+</body>
+<script src="js/formHandler.js"></script>
+</html>
